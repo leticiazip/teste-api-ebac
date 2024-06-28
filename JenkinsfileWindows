@@ -11,6 +11,7 @@ pipeline {
             steps {
                 bat 'npm install'
                 bat 'npm install serverest'
+                bat 'npm install cypress'
             }
         }
         stage('Rodar servidor') {
