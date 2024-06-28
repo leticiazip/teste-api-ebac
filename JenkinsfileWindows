@@ -14,11 +14,11 @@ pipeline {
                 bat 'npm install cypress'
             }
         }
-        stage('Rodar servidor') {
-            steps {
-                bat 'npx serverest --porta 3500'
-            }
-        }
+//        stage('Rodar servidor') {
+//           steps {
+//                bat 'npx serverest --porta 3500'
+//            }
+//        }
         stage('Executar teste') {
             steps {
                 bat '''set NO_COLOR=1
