@@ -17,8 +17,7 @@ pipeline {
         }
         stage('Rodar servidor') {
            steps {
-                //bat 'npx serverest --porta 3500'
-                bat 'npm run serve & wait-on http://localhost:3500'
+                bat 'npx serverest'
             }
         }
         stage('Executar teste') {
