@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx serverest",
-    "cy:run": "npx cypress run"
+    "start-server": "npx serverest --porta 3500",
+    "cy:run": "npx cypress run",
+    "ci": "start-server-and-test start-server http://localhost:3500 test"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,8 @@
     "cypress": "^13.6.0",
     "cypress-plugin-api": "^2.11.1",
     "joi": "^17.12.0"
+  },
+  "devDependencies": {
+    "start-server-and-test": "^2.0.4"
   }
 }
