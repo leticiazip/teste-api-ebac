@@ -9,14 +9,14 @@ pipeline {
         }
         stage('Instalar dependencia') {
             steps {
-                bat 'npm install'
+                bat 'npm install npm -g'
                 bat 'npm install serverest'
                 bat 'npm install cypress'
             }
         }
         stage('Rodar servidor') {
            steps {
-                bat 'npx start-server-and-test start-server http://localhost:3500 test'
+                bat 'npm run ci'
             }
         }
         stage('Executar teste') {
