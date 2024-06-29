@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Rodar servidor') {
            steps {
-                bat 'npx start-server-and-test start-server http://localhost:3500 test'
+                bat 'start-server-and-test start-server http://localhost:3500 test'
             }
         }
         stage('Executar teste') {

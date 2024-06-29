@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "exercicio-api.cy.js",
-    "start-server": "npx serverest",
+    "start-server": "npx serverest --porta 3500",
     "cy:run": "npx cypress run",
-    "ci": "npx start-server-and-test start-server http://localhost:3500 test"
+    "ci": "start-server-and-test start-server http://localhost:3500 test"
   },
   "keywords": [],
   "author": "",
