@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
-import contrato from "../contratos/usuarios.contrato"
+import contrato from "../contratos/usuarios.contrato.js"
 
 describe("Testes da Funcionalidade Usuários", () => {
   let token;
 
   beforeEach(() => {
-    cy.token("sorvetilho@gmail.com", "teste").then((tkn) => {
+    cy.token("fulano@qa.com", "teste").then((tkn) => {
       token = tkn;
     });
   });
