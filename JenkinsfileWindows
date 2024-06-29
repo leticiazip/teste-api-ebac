@@ -12,12 +12,11 @@ pipeline {
                 bat 'npm install'
                 bat 'npm install serverest'
                 bat 'npm install cypress'
-                bat 'npm install wait-on'
             }
         }
         stage('Rodar servidor') {
            steps {
-                bat 'npx start-server-and-test start-server http://localhost:3500 test'
+                bat 'npx serverest --porta 3500'
             }
         }
         stage('Executar teste') {

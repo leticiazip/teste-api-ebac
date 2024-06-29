@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "exercicio-api.cy.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start-server": "npx serverest --porta 3500",
-    "cy:run": "npx cypress run",
-    "ci": "npx start-server-and-test start-server http://localhost:3500 test"
+    "cy:run": "npx cypress run"
   },
   "keywords": [],
   "author": "",
